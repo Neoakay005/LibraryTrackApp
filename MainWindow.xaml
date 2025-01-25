@@ -1,0 +1,84 @@
+﻿<Window x:Class="LibraryTrackApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryTrackApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--Logo & Button-->
+        <Border Grid.Row="0" Grid.Column="0" Background="#134187">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Border Grid.Row="0">
+                    <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image Height="30" Width="40" Source="images/icons/book.png"/>
+                        <Label Content="Library Track" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                    </DockPanel>
+                </Border>
+
+                <Border Grid.Row="1">
+                    <Image>
+                        <Image.Style>
+                            <Style TargetType="Image">
+                                <Setter Property="Source" Value="images/icons/file.png"/>
+                                <Setter Property="Height" Value="100"/>
+                                <Setter Property="Width" Value="100"/>
+                                <Setter Property="Opacity" Value="1"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Source" Value="images/icons/file.png"/>
+                                        <Setter Property="Height" Value="90"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
+                </Border>
+            </Grid>
+        </Border>
+
+        <!--Header & Button-->
+        <Border Grid.Row="1" Grid.Column="0" Background="#134187">
+            
+        </Border>
+
+        <!--Logo & Button-->
+        <Border Grid.Row="0" Grid.Column="1" Background="#134187">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Background="White">
+                    <DockPanel Width="72" HorizontalAlignment="Right">
+                        <Button Content="_"
+                                Style="{DynamicResource minibutonlar}"/>
+                        <Button Content="X"
+                                FontWeight="Bold" 
+                                x:Name="btn_kapat" 
+                                Click="btn_kapat_Click"
+                                Style="{DynamicResource minibutonlar}"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
