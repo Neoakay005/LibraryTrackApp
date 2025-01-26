@@ -5,7 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <!--Mini Buttons-->
-        <Style x:Key="minibutonlar" TargetType="Button">
+        <Style x:Key="minibuttons" TargetType="Button">
             <Setter Property="Foreground" Value="#FF787878"/>
             <Setter Property="Width" Value="35"/>
             <Setter Property="FontSize" Value="9"/>
@@ -30,6 +30,42 @@
                                 <Setter Property="Foreground" Value="White"/>
                             </Trigger>
                             
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Menu Buttons-->
+        <Style x:Key="menubuttons" TargetType="Button">
+            <Setter Property="Foreground" Value="#FF787878"/>
+            <Setter Property="Margin" Value="0,0,0,1"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border"
+                            BorderThickness="5,0,0,0" 
+                            Background="{x:Null}" 
+                            BorderBrush="{x:Null}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#2b5493"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="5,0,0,0"/>
+                                <Setter TargetName="border" Property="Background" Value="#2b5493"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="white"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="5,0,0,0"/>
+                                <Setter TargetName="border" Property="Background" Value="#2b5493"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>

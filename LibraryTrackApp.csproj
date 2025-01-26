@@ -13,12 +13,14 @@
     <None Remove="images\book.png" />
     <None Remove="images\icons\file-yellow.png" />
     <None Remove="images\icons\file.png" />
+    <None Remove="images\icons\library_books.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="images\icons\book.png" />
     <Resource Include="images\icons\file-yellow.png" />
     <Resource Include="images\icons\file.png" />
+    <Resource Include="images\icons\library_books.png" />
   </ItemGroup>
 
 </Project>
