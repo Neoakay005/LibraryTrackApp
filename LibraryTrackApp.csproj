@@ -11,16 +11,24 @@
   <ItemGroup>
     <None Remove="images\add-file.png" />
     <None Remove="images\book.png" />
+    <None Remove="images\icons\book-copy.png" />
+    <None Remove="images\icons\book-open-reader.png" />
+    <None Remove="images\icons\daily-calendar.png" />
     <None Remove="images\icons\file-yellow.png" />
     <None Remove="images\icons\file.png" />
     <None Remove="images\icons\library_books.png" />
+    <None Remove="images\icons\settings.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\icons\book-copy.png" />
+    <Resource Include="images\icons\book-open-reader.png" />
     <Resource Include="images\icons\book.png" />
+    <Resource Include="images\icons\daily-calendar.png" />
     <Resource Include="images\icons\file-yellow.png" />
     <Resource Include="images\icons\file.png" />
     <Resource Include="images\icons\library_books.png" />
+    <Resource Include="images\icons\settings.png" />
   </ItemGroup>
 
 </Project>
