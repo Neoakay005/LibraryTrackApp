@@ -59,7 +59,7 @@
             <StackPanel>
                 <Button Height="50" Style="{DynamicResource menubuttons}">
                     <DockPanel>
-                        <Image Source="images/icons/library_books.png" Height="20" Width="35"/>
+                        <Image Source="images/icons/books.png" Height="20" Width="35"/>
                         <Label Content="Kitaplar" Foreground="White" FontSize="18" FontWeight="Bold"/>
                     </DockPanel>
                 </Button>
@@ -79,6 +79,12 @@
                     <DockPanel>
                         <Image Source="images/icons/daily-calendar.png" Height="20" Width="35"/>
                         <Label Content="Zamanı Geçenler" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                    </DockPanel>
+                </Button>
+                <Button Height="50" Style="{DynamicResource menubuttons}">
+                    <DockPanel>
+                        <Image Source="images/icons/info.png" Height="20" Width="35"/>
+                        <Label Content="Hakkında" Foreground="White" FontSize="18" FontWeight="Bold"/>
                     </DockPanel>
                 </Button>
                 <Button Height="50" Style="{DynamicResource menubuttons}">

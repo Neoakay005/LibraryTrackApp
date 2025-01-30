@@ -16,7 +16,7 @@
     <None Remove="images\icons\daily-calendar.png" />
     <None Remove="images\icons\file-yellow.png" />
     <None Remove="images\icons\file.png" />
-    <None Remove="images\icons\library_books.png" />
+    <None Remove="images\icons\info.png" />
     <None Remove="images\icons\settings.png" />
   </ItemGroup>
 
@@ -27,7 +27,8 @@
     <Resource Include="images\icons\daily-calendar.png" />
     <Resource Include="images\icons\file-yellow.png" />
     <Resource Include="images\icons\file.png" />
-    <Resource Include="images\icons\library_books.png" />
+    <Resource Include="images\icons\books.png" />
+    <Resource Include="images\icons\info.png" />
     <Resource Include="images\icons\settings.png" />
   </ItemGroup>
 
